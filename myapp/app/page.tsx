@@ -494,10 +494,7 @@ export default function Home() {
 
   const renderAssessment = () => (
     <div className="space-y-6">
-      <h1 className="text-4xl font-extrabold text-white mb-8 select-none">
-        Flashcards
-      </h1>
-      <h2 className="text-2xl font-bold text-white mb-4">Quiz Time!</h2>
+      <h1 className="text-2xl font-bold text-white mb-4">Quiz</h1>
       <form onSubmit={(e) => { e.preventDefault(); handleSubmitQuiz(); }} className="space-y-4">
         {quizQuestions.map((q, index) => (
           <div key={q.id} className="p-4 bg-gray-700 rounded-lg shadow-md">
@@ -556,7 +553,6 @@ export default function Home() {
           <p className="text-sm">Need Revision</p>
         </div>
       </div>
-      <p className="text-green-300 mt-4 text-sm">Loomy points added! (placeholder)</p>
       <button
         onClick={generateQuiz}
         className="w-full px-6 py-4 bg-blue-500 text-white font-bold rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 mt-6"
@@ -575,7 +571,7 @@ export default function Home() {
   const renderLLMFeedback = () => (
     <div className="text-left space-y-6">
       <h1 className="text-4xl font-extrabold text-white mb-8 select-none">
-        Flashcards
+        Assessment
       </h1>
       <h2 className="text-3xl font-bold text-white text-center">Your Learning Report</h2>
       
