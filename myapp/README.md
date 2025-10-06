@@ -2,12 +2,18 @@
 ## Getting Started
 ## Clone this repository  
 ## Install Dependencies:  
-`npm install`
+```bash
+npm install
+```
 
 ## Create a .env.local file:  
-`touch .env.local`  
+```bash
+touch .env.local
+```  
 ### Add the environment variables  
-`NEXT_PUBLIC_GEMINI_API_KEY: # your api key goes here` 
+```bash
+NEXT_PUBLIC_GEMINI_API_KEY: "" # your api key goes here
+``` 
 
 ## Run  
 ```bash
